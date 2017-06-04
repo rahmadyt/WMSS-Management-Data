@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>aaa</title>
+</head>
+<body>
+<form action="/crawling/upload_file/" enctype="multipart/form-data" method="POST">
+	{% csrf_token %}
+	<input type="file" name="csv_file" />
+	<input type="submit" value="Upload" />
+	</form>
+</body>
+</html>
